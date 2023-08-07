@@ -1,0 +1,147 @@
+/* pages/shopcart/shopcart.wxss */
+page{
+    height: 100%;
+    /* background: #f5f5f5; */
+    background: rgb(235, 235, 235);
+}
+.top-box{
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+    /* background: #eee; */
+    background: rgb(230, 230, 230);
+    padding: 0 30rpx;
+    font-size: 32rpx;
+}
+.top-box .left{
+    flex: 1;
+}
+
+.item-list{
+    padding-bottom: 110rpx;
+}
+.item-list .item{
+    display: flex;
+    padding: 20rpx;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+.item-list .item .pic image{
+    width: 160rpx;
+    height: 160rpx;
+}
+.item-list .item .content{
+    margin-left: 20rpx;
+}
+.item-list .item .content .title{
+    font-size: 32rpx;
+}
+.item-list .item .content .desc{
+    font-size: 28rpx;
+    color: #999;
+}
+.item-list .item .content .price-info{
+    display: flex;
+}
+.item-list .item .content .price-info .price{
+    /* width: 65%; */
+    width: 220rpx;
+    font-size: 36rpx;
+}
+.item-list .item .content .price-info .oper{
+    display: flex;
+    border: solid 2rpx #ccc;
+    border-radius: 10rpx;
+}
+.item-list .item .content .price-info .oper .add{
+    width: 50rpx;
+    text-align: center;
+    border-left: solid 2rpx #ccc;
+}
+.item-list .item .content .price-info .oper .reduce{
+    width: 50rpx;
+    text-align: center;
+    border-right: solid 2rpx #ccc;
+}
+.item-list .item .content .price-info .oper input{
+    width: 80rpx;
+    text-align: center;
+    font-size: 24rpx;
+}
+
+.total-box{
+    display: flex;
+    position: fixed;
+    height: 110rpx;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 0 20rpx;
+    background: #fff;
+    align-items: center;
+    box-sizing: border-box;
+    z-index: 100;
+}
+.total-box .all{
+    font-size: 24rpx;
+    width: 200rpx;
+    margin-top: 10rpx;
+}
+.total-box .total-price{
+    font-size: 24rpx;
+    flex: 1;
+    margin-left: 130rpx;
+}
+.total-box .total-price .price{
+    font-size: 36rpx;
+}
+.total-box .btn{
+    width: 130rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 32rpx;
+    text-align: center;
+    border-radius: 10rpx;
+    margin-right: 15rpx;
+}
+.total-box .btn-default{
+    background: #eee;
+    color: #666;
+}
+.total-box .btn-primary{
+    background: #ff4d00;
+    color: #fff;
+}
+
+
+.no-result{
+    background: rgb(235, 235, 235);
+    height: 100hv;
+    width: 100%;
+}
+.nor-content{
+    padding-top: 100rpx;
+    margin-bottom: 100rpx;
+    text-align: center;
+}
+.nor-content image{
+    width: 160rpx;
+    height: 160rpx;
+}
+.nor-content text{
+    display: block;
+    font-size: 40rpx;
+    margin: 40rpx;
+    color: #666;
+}
+.no-result .nr-image{
+    font-size: 160rpx;
+}
+.no-result .go-other{
+    width: 500rpx;
+    height: 100rpx;
+    color: #f2873b;
+    border: 2rpx solid #f2873b;
+    margin-top: 20rpx auto;
+    border-radius: 20rpx;
+}

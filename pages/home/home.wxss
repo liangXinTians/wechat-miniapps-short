@@ -1,0 +1,71 @@
+/* pages/home/home.wxss */
+.swiper-box{
+    /* 1rpx=0.5px */
+    padding: 30rpx;
+}
+.swiper-box .swiper{
+    height: 320rpx;
+}
+.swiper-box  image{
+    width: 100%;
+    height: 100%;
+}
+.nav-box .nav{
+    display: flex;
+    width: 2000rpx;
+}
+.nav-box .nav .item{
+    display: block;
+    display: flex;
+    width: 100rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 28rpx;
+    margin-left: 20rpx;
+    border: solid 2rpx #eee;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rpx;
+}
+.nav .item.current{
+    color: #ff4d00;
+}
+
+.goods-list .item{
+    display: flex;
+    padding: 20rpx 30rpx;
+    border-bottom: solid 3rpx #eee;
+}
+.goods-list .pic{
+    width: 200rpx;
+    height: 200rpx;
+}
+.goods-list .pic image{
+    width: 200rpx;
+    height: 200rpx;
+}
+.goods-list .content{
+    margin-left: 30rpx;
+}
+.goods-list .title{
+    font-size: 32rpx;
+    margin-top: 20rpx;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.goods-list .desc{
+    font-size: 24rpx;
+    color: #999;
+    margin-top: 10rpx;
+}
+.goods-list .price{
+    margin-top: 10rpx;
+    color: #ff4d00;
+}
+
+.no-more{
+    text-align: center;
+    padding: 20rpx;
+}

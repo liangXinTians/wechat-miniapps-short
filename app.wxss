@@ -1,0 +1,58 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+@font-face {
+    font-family: "iconfont"; /* Project id 3872762 */
+    src: url('//at.alicdn.com/t/c/font_3872762_rqp5tocr1d.woff2?t=1675146303654') format('woff2'),
+         url('//at.alicdn.com/t/c/font_3872762_rqp5tocr1d.woff?t=1675146303654') format('woff'),
+         url('//at.alicdn.com/t/c/font_3872762_rqp5tocr1d.ttf?t=1675146303654') format('truetype');
+  }
+  
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-xiangyoujiantou:before {
+    content: "\e65f";
+  }
+  
+  .icon-weixin:before {
+    content: "\e600";
+  }
+  
+  .icon-gouwugouwuchedinggou:before {
+    content: "\e682";
+  }
+  
+  .icon-home_fill_light:before {
+    content: "\e7d8";
+  }
+  
+  .icon-arrow-:before {
+    content: "\e625";
+  }
+  
+  .icon-ditu:before {
+    content: "\e62a";
+  }
+
+
+.yellow{
+    color: #ff4d00;
+} 
+.iconfont{
+    font-size: 22rpx;
+} 
+
+  

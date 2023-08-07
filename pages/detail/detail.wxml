@@ -1,0 +1,56 @@
+<!--pages/detail/detail.wxml-->
+<view class="page-box">
+    <!-- 幻灯片 -->
+    <view class="swiper-box">
+        <swiper bindchange="swiperChange" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <swiper-item wx:for="{{detailInfo.SwiperImgList}}" wx:key="*this">
+                <image src="{{item}}" bindtap="showImage" mode="" />
+            </swiper-item>
+        </swiper>
+        <view class="tips">
+            <text>{{current+1}}/3</text>
+        </view>
+    </view>
+
+    <!-- 商品信息 -->
+    <view class="goods-info">
+        <view class="price yellow">￥{{detailInfo.SaleAmount}}</view>
+        <view class="share-box">
+            <view class="title">{{detailInfo.Title}}</view>
+            <button open-type="share" class="share" size="mini">
+                <view class="iconfont icon-arrow-"></view>
+            </button>
+        </view>
+    </view>
+
+    <!-- 地址 -->
+    <view class="adress">
+        <view class="iconfont icon-ditu"></view>
+        <view>河南省滑县工业区八里营镇</view>
+    </view>
+
+    <!-- 商品详情 -->
+    <view class="details-box">
+        <block wx:for="{{detailInfo.DetailImgList}}" wx:key="*this">
+            <image src="{{item}}" mode="widthFix"/>
+        </block>
+    </view>
+
+    <!-- 底部导航 -->
+    <view class="bottom-nav">
+        <view class="small" bindtap="jumpToHome">
+            <view class="iconfont icon-home_fill_light"></view>
+            <view class="">首页</view>
+        </view>
+        <view class="small" bindtap="onCall">
+            <view class=iconfont icon-weixin"></view>
+            <view class="">咨询</view>
+        </view>
+        <view class="small" bindtap="jumpToCart">
+            <view class="iconfont icon-gouwugouwuchedinggou"></view>
+            <view class="">购物车</view>
+        </view>
+        <view class="add-cart" bindtap="addToCart">加入购物车</view>
+        <view class="btn-buy" bindtap="btnBuy">立即购买</view>
+    </view>
+</view>

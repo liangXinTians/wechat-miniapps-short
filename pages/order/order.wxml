@@ -1,0 +1,9 @@
+<!--pages/order/order.wxml-->
+<view class="page-all">
+    <view>
+        暂时未接收到订单
+    </view>
+    <view>
+        敬请期待
+    </view>
+</view>

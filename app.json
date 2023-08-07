@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/detail/detail",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/order/order",
+        "pages/shopcart/shopcart",
+        "pages/my/my"
+    ],
+    "tabBar": {
+        "color": "#000000",
+  
+        "list": [{
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "images/首页.png",
+                "selectedIconPath": "images/首页s.png"
+            },
+            {
+                "pagePath": "pages/shopcart/shopcart",
+                "text": "购物车",
+                "iconPath": "images/购物车.png",
+                "selectedIconPath": "images/购物车s.png"
+            },
+            {
+                "pagePath": "pages/order/order",
+                "text": "订单",
+                "iconPath": "images/订单.png",
+                "selectedIconPath": "images/订单s.png"
+            },
+            {
+                "pagePath": "pages/my/my",
+                "text": "我的",
+                "iconPath": "images/我的.png",
+                "selectedIconPath": "images/我的s.png"
+            }
+        ]
+    },
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTitleText": "商城",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#efefef"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}
